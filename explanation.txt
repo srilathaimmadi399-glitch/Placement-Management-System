@@ -1,0 +1,154 @@
+CRA --Create React App
+Many people creates project with CRA
+
+->slow hot reloading
+->uneccessary configurations
+->slow startup
+->difficult configurations
+#command
+npx create-react-app my-app
+
+// Vite-->
+1.Extremely Fast
+2.HMR-->Hot Module Replacement
+
+             ctrl+s
+                |
+        browser updates immediately
+                |
+            no full page reload
+
+3.Light weight:
+only essential packages will be installed
+4.Modern Technologies:
+uses ES(Ecma Script) modules during development
+5.Easy configuration  
+
+Dashboard:
+<h1>250</h1>-->static
+250 Students...might 
+   /       \
+Increase   decrease
+
+JavaScript knows but react doesnt know
+React get to know that is data is changed
+--state
+
+Real World Problem:
+FaceBook Likes--100
+        |
+if someone likes it
+        |
+101(React State)  
+
+What is state?
+state is a built in react object
+that stores data which can change overtime
+when the state changes,react automatically updates the UI
+
+->variable changes but react doesnt know
+
+solution:
+
+state
+|
+React know
+|
+React Re-render
+|
+UI updates
+
+state changes
+|
+React detects
+|
+component re-render
+|
+new ui displayed
+
+heart of react--->
+
+what is hooks?
+a hook is a special react function that allows functional 
+component to use react features
+
+--useState:it is hook used to create and manage 
+state inside a functional components
+import {useState} from "react";
+                function to update value
+syntax:                    |
+const [state,setState]=useState(initial value)
+        |
+   current value
+
+   //Tv
+   state(current volume)=20
+   setState=21,22,23
+   Events:action performed by the user
+1.clicking a button
+2.typing in a text box
+3.submitting a from
+4.Hovering on a element
+5.pressing a key
+
+react--event handlers
+
+common react Events
+1.onClick-->Button clicks
+2.onChange-->input value change
+3.onSubmit-->form submission
+4.onMouseEnter-->mouse enters an element
+5.onMouseLeave-->mouse leaves the element
+6.onKeyDown--> key is pressed 
+7.keyUp-->key is released
+
+Control Components:
+is a form elements who values are 
+completly controlled by react states
+
+Two way data Binding?
+user types
+|
+input box
+|
+onChange
+|
+React State
+|
+value
+|
+Input box updated
+
+Data moves
+input-->state
+state-->input two way data binding
+
+instagram:
+  login
+  /     \
+success  failure
+/           \
+Home       Login page(again enter the same thing)
+
+Ternary Operator:
+const age=22;
+age>18?"Eligible":"Not Eligible"
+
+isLoggedIn ? "welcome back":"Please Login Again"
+
+
+   register.jsx--registration form and table
+     /                        \
+ register.jsx               student table .jsx
+   |                                |
+array[]---->                    arra[]                 
+    \      /
+    app.jsx   ----array [declared]
+          |
+          props
+
+Routes-- hook
+are a collection of all the url paths in      
+
+Link-->React router componentused to navigate betwen pages
+without refreshing the browser
